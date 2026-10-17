@@ -1,3 +1,4 @@
+
 name: Build GyroLock Motion Photo 3.0.17
 
 on:
@@ -31,7 +32,7 @@ jobs:
           java-version: '17'
 
       - name: Set up Android SDK command-line tools
-        uses: android-actions/setup-android@v3
+        uses: android-actions/setup-android@v4
 
       - name: Accept Android SDK licenses
         shell: bash
