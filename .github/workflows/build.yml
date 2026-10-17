@@ -32,10 +32,6 @@ jobs:
 
       - name: Set up Android SDK command-line tools
         uses: android-actions/setup-android@v3
-        with:
-          # Pin a published command-line-tools revision to avoid attempting
-          # to install the removed legacy SDK package named "tools".
-          cmdline-tools-version: '13114758'
 
       - name: Accept Android SDK licenses
         shell: bash
@@ -106,3 +102,4 @@ jobs:
             **/build/tmp/**
           if-no-files-found: ignore
           retention-days: 14
+          
